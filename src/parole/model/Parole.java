@@ -22,6 +22,12 @@ public class Parole {
 		return lista;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Parole lista=" + lista + "";
+	}
+
 	public void reset() {
 		lista.clear();
 	}
