@@ -12,7 +12,7 @@ import parole.model.Parole;
 
 public class ParoleController {
 	
-	Parole elenco ;
+	Parole elenco;
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
@@ -34,12 +34,15 @@ public class ParoleController {
 
     @FXML
     void doInsert(ActionEvent event) {
-    	// TODO
+    	elenco.addParola(txtParola.getText());
+    	txtResult.setText(elenco.getElenco().toString());
+    	txtResult.setText(" ");
     }
     
     @FXML
     void doReset(ActionEvent event) {
-    	// TODO
+    	elenco.reset();
+    	txtResult.setText(elenco.getElenco().toString());
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete

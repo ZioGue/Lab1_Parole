@@ -1,24 +1,29 @@
 package parole.model;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Parole {
-		
+	
+	private List <String> lista = new ArrayList();
+	
 	public Parole() {
-		//TODO
+		
 	}
 	
 	public void addParola(String p) {
-		//TODO
+		lista.add(p);
+		Collections.sort(lista);
 	}
 	
 	public List<String> getElenco() {
-		//TODO
-		return null;
+		
+		return lista;
 	}
 	
 	public void reset() {
-		// TODO
+		lista.clear();
 	}
 
 }
