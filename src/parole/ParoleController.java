@@ -37,13 +37,14 @@ public class ParoleController {
     	elenco.addParola(txtParola.getText());
     	txtResult.clear();
     	elenco.getElenco().forEach(s -> txtResult.appendText(s + "\n"));
+    	txtParola.clear();
     	
     }
     
     @FXML
     void doReset(ActionEvent event) {
     	elenco.reset();
-    	txtResult.setText(elenco.getElenco().toString());
+    	txtResult.clear();
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
