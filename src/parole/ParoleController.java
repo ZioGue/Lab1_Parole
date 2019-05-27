@@ -35,7 +35,9 @@ public class ParoleController {
     @FXML
     void doInsert(ActionEvent event) {
     	elenco.addParola(txtParola.getText());
-    	txtResult.setText(elenco.getElenco().toString());
+    	txtResult.clear();
+    	elenco.getElenco().forEach(s -> txtResult.appendText(s + "\n"));
+    	
     }
     
     @FXML

@@ -18,7 +18,6 @@ public class Parole {
 	}
 	
 	public List<String> getElenco() {
-		
 		return lista;
 	}
 	
